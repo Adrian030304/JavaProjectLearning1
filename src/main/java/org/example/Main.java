@@ -61,11 +61,10 @@ public class Main {
 
         */
 
-        UserInterface userInterface = new UserInterface(new Scanner(System.in));
-        userInterface.addOperation(new PlusOperation());
-
-        userInterface.start();
-
+//        UserInterface userInterface = new UserInterface(new Scanner(System.in));
+//        userInterface.addOperation(new PlusOperation());
+//
+//        userInterface.start();
 
     }
 
