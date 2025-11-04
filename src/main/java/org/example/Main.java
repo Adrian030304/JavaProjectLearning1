@@ -35,8 +35,12 @@ public class Main {
 //
 //        printPersons(persons);
 
-
-
+        Person ollie = new Student("Ollie", "6381 Hollywood Blvd. Los Angeles 90028");
+//        ollie.credits();        // DOESN'T WORK!
+//        ollie.study();              // DOESN'T WORK!
+        System.out.println(ollie);   // ollie.toString() WORKS //practic executa metoda din student deoarece aceasta e definita acolo
+//        The method to be executed is chosen based on the actual type of the object,
+//        which means the class whose constructor is called when the object is created.
     }
 //    public static void printPersons(ArrayList<Person> persons) {
 //        for (int i = 0; i < persons.size(); i++) {
