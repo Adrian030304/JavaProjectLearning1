@@ -35,7 +35,10 @@ public class Main {
 //
 //        printPersons(persons);
 
-
+        Person ollie = new Student("Ollie", "6381 Hollywood Blvd. Los Angeles 90028");
+//        ollie.credits();        // DOESN'T WORK!
+//        ollie.study();              // DOESN'T WORK!
+        System.out.println(ollie);   // ollie.toString() WORKS
 
     }
 //    public static void printPersons(ArrayList<Person> persons) {
