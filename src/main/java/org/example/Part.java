@@ -30,6 +30,8 @@ class Engine extends Part {
 
 //    in case of private variable and methods, a sub class cannot access the private properties of the superclass
 //    unless they use a public method that calls the private properties of the superclass
+//    if we want to access the properties of a superclass which are only visible to subclass but invible to anybody else
+//    then we can use 'protected'
 
     public Engine(String identifier, String manufacturer, String description, String engineType ) {
         super(identifier, manufacturer, description);
