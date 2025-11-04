@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -59,6 +60,13 @@ public class Main {
         If the definition cannot be found there, either, we move on to the superclass of this superclass, etc...
 
         */
+
+        UserInterface userInterface = new UserInterface(new Scanner(System.in));
+        userInterface.addOperation(new PlusOperation());
+
+        userInterface.start();
+
+
     }
 
 
