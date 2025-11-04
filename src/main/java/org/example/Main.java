@@ -112,24 +112,24 @@ public class Main {
 //        printer.print(message);
 //        printer.print(book);
 
-        ReadingList jonisList = new ReadingList();
-        jonisList.add(new TextMessage("arto", "have you written the tests yet?"));
-        jonisList.add(new TextMessage("arto", "have you checked the submissions yet?"));
-        int i = 0;
-        while (i < 1000) {
-            jonisList.add(new TextMessage("arto", "have you written the tests yet?"));
-            i += 1;
-        }
-        System.out.println("Delegating the reading to Verna");
-
-        ReadingList vernasList = new ReadingList();
-        vernasList.add(jonisList);
-        System.out.println(vernasList + "CEVA");
-        vernasList.read();
-
-        System.out.println();
-        System.out.println("Joni's to-read: " + jonisList.toRead());
+//        ReadingList jonisList = new ReadingList();
+//        jonisList.add(new TextMessage("arto", "have you written the tests yet?"));
+//        jonisList.add(new TextMessage("arto", "have you checked the submissions yet?"));
+//        int i = 0;
+//        while (i < 1000) {
+//            jonisList.add(new TextMessage("arto", "have you written the tests yet?"));
+//            i += 1;
+//        }
+//        System.out.println("Delegating the reading to Verna");
+//
+//        ReadingList vernasList = new ReadingList();
+//        vernasList.add(jonisList);
+//        System.out.println(vernasList + "CEVA");
+//        vernasList.read();
+//
+//        System.out.println();
 //        System.out.println("Joni's to-read: " + jonisList.toRead());
+////        System.out.println("Joni's to-read: " + jonisList.toRead());
     }
 
 
