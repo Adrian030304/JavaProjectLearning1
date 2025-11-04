@@ -18,7 +18,7 @@ public class SuperClass {
 
     @Override
     public String toString() {
-        return this.objectVariable;
+        return "Aici e o lista de charactere: ";
     }
 }
 
@@ -26,5 +26,10 @@ class SubClass extends SuperClass {
 
     public SubClass() {
         super("Subclass");
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + " SUBCLASA";
     }
 }
