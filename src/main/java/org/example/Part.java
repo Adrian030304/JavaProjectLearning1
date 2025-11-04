@@ -28,6 +28,9 @@ public class Part {
 class Engine extends Part {
     private String engineType;
 
+//    in case of private variable and methods, a sub class cannot access the private properties of the superclass
+//    unless they use a public method that calls the private properties of the superclass
+
     public Engine(String identifier, String manufacturer, String description, String engineType ) {
         super(identifier, manufacturer, description);
         this.engineType = engineType;
