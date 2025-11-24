@@ -23,7 +23,18 @@ public class Main {
                 .mapToInt(s -> Integer.valueOf(s))
                 .average().getAsDouble();
 
+        //using an external function as parameter for lambda
+        int filtered = inputs.stream().mapToInt(value -> Main.intValue(value)).sum();
+        // using method reference
+        int filtered2 = inputs.stream().mapToInt(Main::intValue).sum();
+
+        System.out.println("SUM" + filtered);
         System.out.println("Divisible by three " + numbersDivisible);
         System.out.println("Average number: " + average);
+
+
+    }
+    public static int intValue(String num) {
+        return Integer.valueOf(num);
     }
 }
